@@ -10,12 +10,12 @@ var express     = require("express"),
     Comment     = require("./models/comment"),
     User        = require("./models/user"),
     seedDB      = require("./seeds");
-    
 
 var commentRoutes      = require("./routes/comments"),
     dishRoutes   = require("./routes/dishes"),
-    indexRoutes        = require("./routes/index");
-
+    indexRoutes        = require("./routes/index"),
+    contactRoutes=require("./routes/contact");
+    
 var url= process.env.DATABASEURL || "mongodb://localhost/yelp_camp";
 mongoose.connect(url);
 
@@ -50,6 +50,7 @@ app.use(function(req, res ,next){
 app.use("/",indexRoutes);
 app.use("/dishes/:id/comments",commentRoutes);
 app.use("/dishes",dishRoutes);
+app.use("/contact",contactRoutes);
 
 
 app.listen(process.env.PORT, process.env.IP, function(){
