@@ -3,7 +3,9 @@ This web app will help people in making quick judgements on what are the best it
 
 # How to Run the website
 Just go to https://webdevbootcamp-ankitner.c9users.io to use the website. As simple as that! You cannot run it as a localhost because we are using our own database for alpha release and as result it won't work as a localhost. The site might be busy, just have patience and try it after some time again if you face any issues.
+# Landing Page
 
+Our landing page can be found inside first page of the website if someone clicks the button 'About Our Site". Just for clarity the link to the about page is given here too. Just go to - https://webdevbootcamp-ankitner.c9users.io/about
 
 # Project Description
 If you are hungry and want to spend your money on something worthy, then you must check our app, which provides the ratings and feedback of a dish at any restaurant near you. This app will help you satisfy your appetite with food that is worth your time and money. Just go to our site, search what you want to eat in the search bar and get our list of suggestions to satisfy your cravings. 
