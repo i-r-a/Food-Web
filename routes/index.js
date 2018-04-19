@@ -42,6 +42,12 @@ router.get("/login", function(req, res) {
    res.render("login",{page:'login'}); 
 });
 
+//facebook
+router.get('/auth/facebook',passport.authenticate('facebook'));
+router.get('/auth/facebook/callback',passport.authenticate('facebook'),{
+  successRedirect:"/dishes",
+  failureRedirect:"/login"
+})
 //Handling Logic
 router.post("/login", passport.authenticate("local",
 {

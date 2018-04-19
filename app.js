@@ -11,6 +11,8 @@ var express     = require("express"),
     User        = require("./models/user"),
     seedDB      = require("./seeds");
 
+var social = require('./app/passport/passport')(app, passport);
+
 var commentRoutes      = require("./routes/comments"),
     dishRoutes   = require("./routes/dishes"),
     indexRoutes        = require("./routes/index"),
